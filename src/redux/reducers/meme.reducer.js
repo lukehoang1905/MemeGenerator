@@ -40,6 +40,7 @@ const memeReducer = (state = initialState, action) => {
       console.log(payload);
       return { ...state, loading: false };
     case types.SET_SELECTED_MEME:
+      console.log("here", payload);
       return { ...state, selectedMeme: payload };
     default:
       return state;

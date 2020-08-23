@@ -25,7 +25,7 @@ const HomePage = () => {
   const handleCancel = (params) => {
     dispatch(memeActions.setSelectedMeme(null));
   };
-
+  console.log("selected", selectedMeme);
   return (
     <Container className="fill d-flex justify-content-center align-items-center">
       {selectedMeme && (
